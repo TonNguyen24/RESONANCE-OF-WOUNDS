@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESONANCE OF WOUNDS</title>
+
+    <!-- Tone.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.38/Tone.min.js"></script>
+    
+    <!-- p5.js -->
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+    <!-- Link to the external CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="big_guide">
+        <div class="guide">
+            <h1>save canvas image - 1</h1>
+            <h1>invert canvas color - 2</h1>
+            <h1>reset performance - 3</h1>
+        </div>
+    </div>
+
+    <video class="bg" autoplay muted loop>
+        <source src="img/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!--HEADER-->
+    <div class="nav">
+        <h1 id="nav_1"><a href="index.html">HOME</a></h1>
+        <h1 id="nav_2">EVERY WORD YOU PUT DOWN IS ONE STEP FURTHER FROM REALITY</h1>
+        <h1 id="nav_3"> HOLD 'ECS' TO READ THE GUIDE</h1>
+    </div>
+
+    <!--CHAT BOX-->
+    <div class="chat_box">
+        <div class="asker"><p class="question">M: What do you regret?</p>             <button id="randomizeButton"><img src="img/Dice.png"></button>
+        </div>
+        <hr>
+        <div class="type">
+            <input id="inputText" type="text" placeholder="<....?">
+            <button id="sendButton">SEND</button> 
+            <!-- New button to randomize question -->
+        </div>
+    </div>
+
+    <!-- Div for p5.js canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- JS for p5.js and interaction logic -->
+    <script src="sketch2.js"></script>  
+    <script src="script2.js"></script>  
+    <script src="sound.js"></script> <!-- SOUND -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.38/Tone.min.js"></script>
+
+</body>
+</html>

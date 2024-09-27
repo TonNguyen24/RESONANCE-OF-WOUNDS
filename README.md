@@ -1,1 +1,1 @@
-# RESONANCE-OF-WOUNDS
+Please start with the index.html page and click anywhere on the screen to hear the background music (since browsers block autoplay audio).
